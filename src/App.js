@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import key from "./Key.js";
 
 const App = () => {
   var [input, setInput] = useState("");
@@ -13,8 +14,7 @@ const App = () => {
         const options = {
           method: "POST",
           headers: {
-            "x-rapidapi-key":
-              "a19ff8e0d4mshc242df1707a9e69p1444eajsn1f3a0794cafe",
+            "x-rapidapi-key": `${key}`,
             "x-rapidapi-host": "open-ai21.p.rapidapi.com",
             "Content-Type": "application/json",
           },
